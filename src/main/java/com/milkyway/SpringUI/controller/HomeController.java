@@ -20,10 +20,14 @@ public class HomeController {
 	public ModelAndView getHome(@RequestParam(required=false) String name) {
 		ModelAndView model=new ModelAndView("index");
 		model.addObject("name",name);
+		
+		//Consuming REST API
+		
 		RestTemplate restTemplate = new RestTemplate();
-        String quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", String.class);
-        log.info(quote.toString());
-        model.addObject("msg",quote);        
+        	String quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", String.class);
+        	log.info(quote.toString());
+
+        	model.addObject("msg",quote);        
 		return model;
 	}
 }
