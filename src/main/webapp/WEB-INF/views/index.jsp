@@ -7,6 +7,9 @@
 <title>Home</title>
 </head>
 <body>
-Hello , ${name} , ${msg }
+<form action="/" method="post">
+<input type="text" placeholder="Enter your name" name="name">
+<button type="submit">Submit</button>
+</form>
 </body>
 </html>
