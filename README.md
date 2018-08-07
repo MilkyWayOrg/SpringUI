@@ -1,7 +1,7 @@
 # SpringUI
 Spring Boot App which returns simple greeting msg using SpringRestService.
 
-Index.jsp - Displays a Form with name as input.
+Index.jsp - Displays a Form with name as input.\n
 Home.jsp - Displays a greetings msg for the input.
 
 HomeController.java
